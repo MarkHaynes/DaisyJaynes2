@@ -1,0 +1,122 @@
+/* ------------------------------------------
+	BASE STYLES
+-------------------------------------------*/
+html {
+  font-size: 62.5%;
+  line-height: 1.2; 
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ededed;
+  font-weight: 300; 
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+
+
+#site-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------
+	Fonts Styles
+-------------------------------------------*/
+@font-face {
+  font-family: 'anjelika_rosemedium';
+  src: url("font/anjelika_rose-webfont.eot");
+  src: url("font/anjelika_rose-webfont.eot?#iefix") format("embedded-opentype"), url("font/anjelika_rose-webfont.woff") format("woff"), url("font/anjelika_rose-webfont.ttf") format("truetype"), url("font/anjelika_rose-webfont.svg#anjelika_rosemedium") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+/* ------------------------------------------
+	Colours Styles
+-------------------------------------------*/
+$color-white: #fcfcfc;
+$color-purple-light: #977ea4;
+$color-purple: #7e638c;
+$color-purple-highlight: #6d5779;
+$color-grey-highlight: #e0e0e0;
+
+
+/* ------------------------------------------
+	Header Styles
+-------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  clear: both; 
+}
+
+h1 {
+  font-size: 30px;
+  font-size: 3rem; 
+}
+
+h2 {
+  font-size: 25px;
+  font-size: 2.5rem; 
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 2rem; 
+}
+
+h4 {
+  font-size: 16px;
+  font-size: 1.6rem; 
+}
+
+h5 {
+  font-size: 10px;
+  font-size: 1rem; 
+}
+
+h6 {
+  font-size: 8px;
+  font-size: 0.8rem; 
+}
+
+/* ------------------------------------------
+	Font Styles
+-------------------------------------------*/
+p, address {
+  font-size: 18px;
+  font-size: 1.8rem; 
+}
+
+p {
+  text-align: justify; 
+}
+
+
+a {
+  text-decoration: none; 
+}
+
+
+a:hover {
+  text-decoration: underline; 
+}
+
+/* ------------------------------------------
+	Instafeed Styles
+-------------------------------------------*/
+#instafeed a {
+  padding: 1px;
+  margin: 1px;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  position: relative;
+}
+
+#instafeed a:hover .likes {
+  opacity:1;
+}
+
