@@ -241,6 +241,9 @@ input.searchButton:hover {
 /* ------------------------------------------
   Mobile Styles
 -------------------------------------------*/
+li.menu-item-mobile-header {
+  line-height: 40px;
+}
 
 @media screen and (min-width: 800px) {
 
@@ -251,6 +254,7 @@ input.searchButton:hover {
     display: none; 
   } 
 }
+
 @media screen and (max-width: 799px) {
 
   header#mobile-header {
@@ -317,6 +321,11 @@ input.searchButton:hover {
     z-index: 1000; 
   }
 
+}
+
+
+@media all and (max-width: 799px) and (min-width: 401px) {
+
   .menu-mobile {
     width: 100%;
     height: auto; 
@@ -325,7 +334,97 @@ input.searchButton:hover {
   .menu-mobile ul {
     padding: 0px;
     margin: 0px auto;
+    width: 95%;
+    display: block;
+    list-style-type: none;
+    -webkit-box-shadow: 0px 5px 15px 5px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: 0px 5px 15px 5px rgba(50, 50, 50, 0.2);
+    box-shadow: 0px 5px 15px 5px rgba(50, 50, 50, 0.2); 
+  }
+
+  .menu-mobile ul li {
+    color: #fcfcfc;
+    font-size: 26px;
+    font-size: 2.6rem;
+    width: 50%;
+    height: 40px;
+    list-style-type: none;
+    margin-right: 0px;
+    display: block;
+    zoom: 1;
+    float: left;
+    text-align: center;
+    background-color: #81658f;
+    border-bottom: 1px solid $color-purple-light; 
+  }
+
+  .menu-mobile ul li.menu-item-mobile-header, .menu-mobile ul li.menu-item-search {
+    width: 100%;
+  }
+
+  .menu-mobile ul li a {
+    background-color: #634e6e;
+    border-bottom: 1px solid $color-purple-light;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #fcfcfc;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 0px;
+    width: 100%;
+    text-align: center; 
+  }
+
+
+  .menu-mobile ul li a:hover {
+    background-color: $color-purple-light; 
+  }
+
+  .menu-mobile ul li input {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #000;
     width: 80%;
+    border: 0px;
+    height: 30px;
+    margin: 10px auto 0px auto;
+    display: block; 
+  }
+
+  .menu-mobile ul li button {
+    width: 80%;
+    border: 0px;
+    background-color: $color-purple-light;
+    font-size: 20px;
+    font-size: 2rem;
+    height: 30px; 
+  }
+
+  .menu-mobile ul li.menu-item-social img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+  }
+
+  .menu-mobile ul li.menu-item-search {
+    height: 90px;
+    background-color: #634e6e; 
+  } 
+}
+
+@media all and (max-width: 400px) {
+
+  .menu-mobile {
+    width: 100%;
+    height: auto; 
+  }
+
+  .menu-mobile ul {
+    padding: 0px;
+    margin: 0px auto;
+    width: 95%;
     display: block;
     list-style-type: none;
     -webkit-box-shadow: 0px 5px 15px 5px rgba(50, 50, 50, 0.2);

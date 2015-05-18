@@ -1,0 +1,95 @@
+section#sidebar {
+  width: 28%;
+  margin-left: 2%;
+  height: auto;
+  margin-top: 90px; }
+
+
+h2#title-sidebar {
+  background-color: #7e638c;
+  min-height: 55px;
+  width: 90%;
+  z-index: 500;
+  margin: 0px;
+  padding: 10px 5%;
+  color: #fcfcfc;
+  font-size: 30px;
+  font-size: 3rem; }
+
+
+aside#sidebar-related-posts {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+ul#related-post {
+  margin: 0px 0;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; 
+
+  li {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #bfc2bf;
+    display: block;
+    margin: 10px 0;
+    text-align: center; 
+
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 2px 2px 0px 0px rgba(50, 50, 50, 0.1); 
+  }
+
+  li h3 {
+    margin: 0px;
+    padding: 0px; 
+  }
+
+  li h3 a {
+    color: #000;
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: block;
+    padding: 15px 10px; 
+  }
+
+  li h3 a:hover {
+    display: block;
+    color: #000;
+    background-color: #efefef;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease; 
+  }
+
+  li img {
+    width: 100%;
+  }
+}
+
+aside#sidebar-social-networks {
+  background-color: #fcfcfc;
+}
+
+aside#sidebar-social-networks img {
+  max-width: 60px;
+  width: 15%;
+  padding: 2.5%;
+  float: left; }
+
+@media screen and (min-width: 800px) {
+
+  section#sidebar {
+    float: left; 
+  }
+}
+
+@media screen and (max-width: 799px) {
+
+  section#sidebar {
+    width: 96%;
+    margin: 0 auto; 
+  } 
+}

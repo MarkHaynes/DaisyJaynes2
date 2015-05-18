@@ -10,7 +10,10 @@
 		if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 		$category = get_the_category(); 
 		$catName = $category[0]->slug;
-		$catNameFull = $category[0]->name; 	?>
+		$catNameFull = $category[0]->name;
+		$postid = get_the_ID();
+		$postid = array($postid);	
+		?>
 
 	<div class="top-wrap">	 	
 		
@@ -42,6 +45,7 @@
 				<div class= "post-excerpt">
 					<?php the_excerpt();?>
 					<a href="<?php the_permalink() ?>" class="read-more" rel="bookmark" title="<?php the_title_attribute(); ?>">Read More</a>
+				
 				</div><!-- excerpt -->
 					
 			</div><!-- featured-meta -->
@@ -70,11 +74,13 @@
 	<?php wp_reset_postdata(); ?>
 
 	<main id="main-content" role="main" class="js-isotope">
+
 		<?php 
 		 
 		$args2 = array (
 			'ignore_sticky_posts'    => true,
 			'posts_per_page' => 50,
+			'post__not_in' => $postid,
 			'paged' => $paged
 		);
 		$query2 = new WP_Query( $args2 );

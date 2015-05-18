@@ -17,6 +17,7 @@
 		<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/normalize.css' />
 		<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/style.css' />
 		<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/style2.css' />
+		<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 		<!--[if IE]>
 		    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
