@@ -6,13 +6,12 @@
 		<?php
 		$exclude_ids = array($GLOBALS['daisy_sidebar_postid']);
 		$id = $exclude_ids[0];
-			 $related_query = new WP_query(array('cat' => $GLOBALS['daisy_sidebar_categoryid'], 'showposts' => 4, 'post__not_in' => $exclude_ids )); ?>
+			 $related_query = new WP_query(array('cat' => $GLOBALS['daisy_sidebar_categoryid'], 'showposts' => 4, 'post__not_in' => $exclude_ids, 'orderby' => 'rand' )); ?>
 
-			<?php if ( $related_query->have_posts() ) : while ( $related_query->have_posts() ) : $related_query->the_post(); 
-
-
+			<?php if ( $related_query->have_posts() ) : while ( $related_query->have_posts() ) : $related_query->the_post();
 
 					if ( has_post_thumbnail() ) {
+						
 					$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'related-image' );?>
 					<li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				    	<?php echo '<img src="' . $image_src[0]  . '" alt="'. get_the_short_title() . '"/>';
